@@ -1,1 +1,81 @@
 /** @format */
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+header {
+  background-color: rgb(237, 221, 174);
+  height: 200px;
+}
+
+header h1 {
+  text-align: center;
+  padding-top: 72px;
+}
+
+.galleri img {
+  aspect-ratio: 1/1;
+}
+
+.galleri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+  gap: 1.5rem;
+
+  background-color: rgb(245, 245, 229);
+}
+
+.content {
+  grid-column: 2;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  margin: 50px;
+}
+
+.plakat img {
+  width: 50%;
+}
+
+.plakat img,
+h1,
+p {
+  grid-area: 1 / 1;
+}
+
+.plakat h1 {
+  font-family: "IBM Plex Serif";
+  font-size: 80px;
+  color: white;
+  padding-bottom: 160px;
+  text-align: center;
+  line-height: 120px;
+}
+
+.plakat {
+  grid-column: 2;
+
+  display: grid;
+  place-items: center;
+  margin: 50px;
+}
+
+.plakat p {
+  font-family: "roboto";
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  padding-top: 400px;
+  line-height: 15px;
+}
