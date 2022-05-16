@@ -42,6 +42,27 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 1rem;
   margin: 50px;
+  background-color: rgb(237, 221, 174);
+  padding: 20px;
+}
+
+.beskrivelse {
+  font-family: "roboto";
+}
+
+.beskrivelse h1 {
+  font-size: 3rem;
+}
+
+.beskrivelse h2 {
+  font-size: 1.5rem;
+}
+
+.beskrivelse p {
+  line-height: 25px;
+
+  font-family: "roboto";
+  font-size: 1rem;
 }
 
 .plakat img {
@@ -73,9 +94,43 @@ p {
 
 .plakat p {
   font-family: "roboto";
-  font-size: 10px;
+  font-size: 0.6rem;
   color: white;
   text-align: center;
   padding-top: 400px;
   line-height: 15px;
+}
+
+iframe,
+video {
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 16/9;
+  padding: 10px;
+}
+
+.video_content {
+  grid-column: 2;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+
+  margin: 50px;
+
+  border: black solid 1px;
+  padding: 50px;
+}
+
+.layoutdiagram {
+  grid-column: 2;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+
+  border: black solid 1px;
+
+  margin: 50px;
 }
